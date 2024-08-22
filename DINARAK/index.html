@@ -1,0 +1,540 @@
+<html><head>
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-S98XBSZ0GE&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript">
+        window.onerror = function myErrorHandler(errorMsg, url, lineNumber, error) {
+            setTimeout(function () {
+                var ErrorObj = { errorMsg: errorMsg, url: window.location.href, lineNumber: lineNumber, DocumntURL: url, stackTrace: error.stack };
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("POST", "/Audit/AddJavaScriptError", true);
+                xmlhttp.setRequestHeader('Content-type', "application/json; charset=utf-8");
+                xmlhttp.send(JSON.stringify(ErrorObj));
+            }, 1);
+        };
+    </script> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title> - Dinarak</title>
+    <style>
+        li.active {
+            background-color: #cc0865;
+        }
+
+        .overlayWrapper {
+            border-top: none !important;
+            box-shadow: none !important;
+        }
+        .form-control {
+        color: #184459!important;
+        }
+    </style>
+
+        <!-- CSS Files-->
+        <link href="Content/bootstrap-rtl.css" rel="stylesheet" type="text/css">
+        <link href="Content/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="Content/toastr.min.css?v=1" rel="stylesheet" type="text/css">
+        <link href="Content/datatables.ar.min.css" rel="stylesheet" type="text/css">
+        <link href="Content/datatables.bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="Content/responsive.dataTables.min.css" rel="stylesheet" type="text/css">
+        <link href="Content/AdminLTE.css" rel="stylesheet" type="text/css">
+        <link href="Content/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+        <link href="Content/gsdk-bootstrap-wizard-rtl.css" rel="stylesheet" type="text/css">
+        <link href="Content/Site-rtl.css" rel="stylesheet" type="text/css">
+
+        <!-- JS Files-->
+        <script src="Scripts/AREnumArray.js" type="text/javascript"></script>
+        <script src="Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script src="Scripts/jquery.blockUI.js" type="text/javascript"></script>
+        <script src="Scripts/bootstrap.js" type="text/javascript"></script>
+        <script src="Scripts/respond.js" type="text/javascript"></script>
+        <script src="Scripts/bootstrap-datepicker.ar_.js" type="text/javascript"></script>
+        <script src="Scripts/toastr.min.js" type="text/javascript"></script>
+        <script src="Scripts/GeneralFunctions.js" type="text/javascript"></script>
+        <script src="Scripts/jquery.numeric.min.js" type="text/javascript"></script>
+        <script src="Scripts/jquery.touchSwipe.min.js" type="text/javascript"></script>
+        <script src="Scripts/datatables.min.js" type="text/javascript"></script>
+        <script src="Scripts/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="Scripts/datatables.bootstrap.js" type="text/javascript"></script>
+        <script src="Scripts/dataTables.responsive.min.js" type="text/javascript"></script>
+        <script src="Scripts/fastclick.js" type="text/javascript"></script>
+        <script src="Scripts/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+        <script src="Scripts/jquery.validator.additional-methods.js" type="text/javascript"></script>
+        <script src="Scripts/messages_ar.js" type="text/javascript"></script>
+        <script src="Scripts/TransactionStatus.js" type="text/javascript"></script>
+
+
+
+
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-93027192-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-93027192-2');
+
+        /**/</script>
+    
+<style>undefined</style><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="use-credentials"><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa"></head>
+<body style="color: rgb(24, 68, 89);">
+
+    
+    <center id="LayoutLogo">
+        <img src="Content/img/DinarakLogo150.png" style="margin-top: 10%;" alt="Dinarak" width="100" height="100">
+    </center>
+  <div class="container body-content">
+    <div class="container body-content" style="margin:5%">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <div class="wizard-container">
+                    <form id="CheckPersonalInfo" action="CheckPersonalAndGetOTP" method="post" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-sm-12 form-group" style="text-align:center">
+                                <label>رقم الهاتف</label>
+                            </div>
+                            <div class="col-sm-12" style="width:50%;margin-right: 25%">
+                                <input class="form-control" data-val="true" data-val-regex="Phone number is incorrect رقم الهاتف غير صحيح الرجاء ادخال رقم الهاتف باللغه الانجليزية(123456789)" data-val-regex-pattern="((009627|\+9627|07|9627)[7-9]{1}[0-9]{7})" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_PhoneNumber" maxlength="14" name="NotificationAndProfileModel.PhoneNumber" type="number" value="">
+                                <span class="field-validation-valid" data-valmsg-for="NotificationAndProfileModel.PhoneNumber" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group" style="text-align:center">
+                                <label>نوع اثبات الهوية</label>
+                            </div>
+                            <div class="col-sm-12" style="width: 50%; margin-right: 25%">
+                                <select class="form-control select2-hidden-accessible" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="NationalityDDL" name="IdentityModel.IdentityType" onchange="CheckType()" data-select2-id="NationalityDDL" tabindex="-1" aria-hidden="true"><option value="" data-select2-id="2"> -الرجاء الاختيار- </option>
+<option value="1">هوية أحوال مدنية</option>
+<option value="2">رقم الجواز</option>
+<option value="3">أبناء غزة</option>
+<option value="4">أبناء أردنيات</option>
+<option value="5">جواز سفر مؤقت</option>
+<option value="8">بطاقة إقامة</option>
+<option value="9">تصريح عمل</option>
+<option value="10">بطاقه امنية لابناء الجالية السورية</option>
+<option value="14">عسكري - شهادة تعيين</option>
+</select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 662px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-NationalityDDL-container"><span class="select2-selection__rendered" id="select2-NationalityDDL-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">ابحث أو اختر...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                <span class="field-validation-valid" data-valmsg-for="IdentityModel.IdentityType" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="div_AllType" style="display:none">
+                            <div id="div_National" class="row">
+                                <div class="col-sm-12" style="text-align:center">
+                                    <label id="lblNational"></label>
+                                </div>
+                                <div class="col-sm-12" style="width:50%;margin-right: 25%">
+                                    <input class="form-control" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="IdentityModel_NationalNumber" name="IdentityModel.NationalNumber" type="number" value="">
+                                    <span class="field-validation-valid" data-valmsg-for="IdentityModel.NationalNumber" data-valmsg-replace="true"></span>
+                                    <label id="errNationalNumber" style="color:red; display:none">الرقم الوطني يجب ان يحتوي 10 ارقام</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="divNumber" class="row">
+                                <div class="col-sm-12" style="text-align:center">
+                                    <label id="lblNumber"></label>
+                                    <img src="content/img/idno.png" id="IdNoR" style="display:none;width: 20%">
+                                </div>
+                                <div class="col-sm-12" style="width:50%;margin-right: 25%">
+                                    <input class="form-control" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="IdentityModel_ProofOfIdentityNumber" name="IdentityModel.ProofOfIdentityNumber" value="" placeholder="">
+                                    <span class="field-validation-valid" data-valmsg-for="IdentityModel.ProofOfIdentityNumber" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="div_FileNumber" class="row">
+                                <div class="col-sm-12" style="text-align:center">
+                                    <label>رقم البطاقة</label>
+                                </div>
+                                <div class="col-sm-12" style="width:50%;margin-right: 25%">
+                                    <input class="form-control" data-val="true" data-val-required="حقل اجباري&nbsp; -&nbsp; Mandatory field" id="IdentityModel_FileNumber" name="IdentityModel.FileNumber" type="number" value="">
+                                    <span class="field-validation-valid" data-valmsg-for="IdentityModel.FileNumber" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="divDate" class="row" style="display:none">
+                                <div class="col-sm-12" style="text-align:center">
+                                    <label id="lblDate"></label>
+                                </div>
+                                <div class="col-sm-12" style="width:50%;margin-right: 25%">
+                                    <input class="form-control" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="IdentityModel_documentValitidyDate" name="IdentityModel.documentValitidyDate" type="date" value="1/1/0001 12:00:00 AM">
+                                    <span class="field-validation-valid" data-valmsg-for="IdentityModel.documentValitidyDate" data-valmsg-replace="true"></span>
+                                    <label id="valExDate" style="color:red; display:none">تاريخ البطاقة منتهية</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wizard-footer height-wizard">
+                            <div class="tabBtn">
+                                <button class="btn btn-fill btn-warning btn-wd btn-sm pull-right" type="button" onclick="NextFunction()" data-target-tab="tab7">التحقق</button>
+                                <button class="btn btn-fill btn-warning btn-wd btn-sm pull-left" type="button" onclick="window.history.back();">السابق</button>
+                            </div>
+                        </div>
+                        <div hidden="">
+                            <input type="hidden" data-val="true" data-val-required="The Lang field is required." id="Lang" name="Lang" value="1">
+                            <input type="hidden" data-val="true" data-val-regex="Only Arabic characters are allowed يُسمح فقط بإدخال الأحرف العربية " data-val-regex-pattern="(^[ء-ي. ']+[_ء-ي.']*$)" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_ArabicFirstName" name="PersonalModel.ArabicFirstName" value="">
+                            <input type="hidden" data-val="true" data-val-regex="Only Arabic characters are allowed يُسمح فقط بإدخال الأحرف العربية " data-val-regex-pattern="(^[ء-ي. ']+[_ء-ي.']*$)" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_ArabicSecondName" name="PersonalModel.ArabicSecondName" value="">
+                            <input type="hidden" data-val="true" data-val-regex="Only Arabic characters are allowed يُسمح فقط بإدخال الأحرف العربية " data-val-regex-pattern="(^[ء-ي. ']+[_ء-ي.']*$)" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_ArabicThirdName" name="PersonalModel.ArabicThirdName" value="">
+                            <input type="hidden" data-val="true" data-val-regex="Only Arabic characters are allowed يُسمح فقط بإدخال الأحرف العربية " data-val-regex-pattern="(^[ء-ي. ']+[_ء-ي.']*$)" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_ArabicLastName" name="PersonalModel.ArabicLastName" value="">
+                            <input type="hidden" data-val="true" data-val-regex="Only English characters are allowed يُسمح فقط بإدخال الأحرف الانجليزية " data-val-regex-pattern="(^[a-zA-Z']+[ a-zA-Z-_.']*$)" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_EnglishFirstName" name="PersonalModel.EnglishFirstName" value="">
+                            <input type="hidden" data-val="true" data-val-regex="Only English characters are allowed يُسمح فقط بإدخال الأحرف الانجليزية " data-val-regex-pattern="(^[a-zA-Z']+[ a-zA-Z-_.']*$)" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_EnglishSecondName" name="PersonalModel.EnglishSecondName" value="">
+                            <input type="hidden" data-val="true" data-val-regex="Only English characters are allowed يُسمح فقط بإدخال الأحرف الانجليزية " data-val-regex-pattern="(^[a-zA-Z']+[ a-zA-Z-_.']*$)" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_EnglishThirdName" name="PersonalModel.EnglishThirdName" value="">
+                            <input type="hidden" data-val="true" data-val-regex="Only English characters are allowed يُسمح فقط بإدخال الأحرف الانجليزية " data-val-regex-pattern="(^[a-zA-Z']+[ a-zA-Z-_.']*$)" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_EnglishLastName" name="PersonalModel.EnglishLastName" value="">
+                            <input type="hidden" data-val="true" data-val-regex="character only أحرف فقط" data-val-regex-pattern="(^[a-zA-Zء-ي.'*\d]+[ a-zA-Z-_ء-ي.'*\d]*$)" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_BirthPlace" name="PersonalModel.BirthPlace" value="">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_NationalityID" name="PersonalModel.NationalityID" value="0">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_Day" name="PersonalModel.Day" value="0">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_Month" name="PersonalModel.Month" value="0">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_Year" name="PersonalModel.Year" value="0">
+                            <input type="hidden" id="PersonalModel_Gender" name="PersonalModel.Gender" value="">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_DateOfBirth" name="PersonalModel.DateOfBirth" value="1/1/0001 12:00:00 AM">
+                            <input type="hidden" id="PersonalModel_BirthOfDate" name="PersonalModel.BirthOfDate" value="">
+                            <input type="hidden" id="PersonalModel_IsnewAccount" name="PersonalModel.IsnewAccount" value="true">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_Countries" name="PersonalModel.Countries" value="System.Collections.Generic.List`1[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem]">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_CountryOfResidence" name="PersonalModel.CountryOfResidence" value="">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="PersonalModel_MPayNationalityName" name="PersonalModel.MPayNationalityName" value="">
+                            <input type="hidden" id="PersonalModel_NationalityName" name="PersonalModel.NationalityName" value="">
+                            <input type="hidden" id="IdentityModel_NationalNumber" name="IdentityModel.NationalNumber" value="">
+                            <input type="hidden" id="IdentityModel_IdentityTypes" name="IdentityModel.IdentityTypes" value="System.Collections.Generic.List`1[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem]">
+                            <input type="hidden" id="IdentityModel_IdentityType" name="IdentityModel.IdentityType" value="0">
+                            <input type="hidden" id="IdentityModel_ProofOfIdentityNumber" name="IdentityModel.ProofOfIdentityNumber" value="">
+                            <input type="hidden" id="IdentityModel_Cites" name="IdentityModel.Cites" value="System.Collections.Generic.List`1[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem]">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="IdentityModel_CityID" name="IdentityModel.CityID" value="">
+                            <input type="hidden" data-val="true" data-val-regex="character only أحرف فقط" data-val-regex-pattern="(^[a-zA-Zء-ي]+[ a-zA-Z-_ء-ي]*$)" data-val-required="حقل اجباري  -  Mandatory field" id="IdentityModel_Area" name="IdentityModel.Area" value="">
+                            <input type="hidden" id="IdentityModel_documentValitidyDate" name="IdentityModel.documentValitidyDate" value="1/1/0001 12:00:00 AM">
+                            <input type="hidden" id="IdentityModel_DatedocumentValitidy" name="IdentityModel.DatedocumentValitidy" value="">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="IdentityModel_DocumentValidityDay" name="IdentityModel.DocumentValidityDay" value="0">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="IdentityModel_DocumentValidityMonth" name="IdentityModel.DocumentValidityMonth" value="0">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="IdentityModel_DocumentValidityYear" name="IdentityModel.DocumentValidityYear" value="0">
+                            <input type="hidden" id="IdentityModel_FileNumber" name="IdentityModel.FileNumber" value="">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="IdentityModel_LIWAId" name="IdentityModel.LIWAId" value="">
+                            <input type="hidden" data-val="true" data-val-regex="character only أحرف فقط" data-val-regex-pattern="(^[a-zA-Zء-ي]+[ a-zA-Z-_ء-ي]*$)" data-val-required="حقل اجباري  -  Mandatory field" id="RealBene_ciaryPersonalModel_FirstName" name="RealBeneﬁciaryPersonalModel.FirstName" value="">
+                            <input type="hidden" data-val="true" data-val-regex="character only أحرف فقط" data-val-regex-pattern="(^[a-zA-Zء-ي]+[ a-zA-Z-_ء-ي]*$)" data-val-required="حقل اجباري  -  Mandatory field" id="RealBene_ciaryPersonalModel_MiddleName" name="RealBeneﬁciaryPersonalModel.MiddleName" value="">
+                            <input type="hidden" data-val="true" data-val-regex="character only أحرف فقط" data-val-regex-pattern="(^[a-zA-Zء-ي]+[ a-zA-Z-_ء-ي]*$)" data-val-required="حقل اجباري  -  Mandatory field" id="RealBene_ciaryPersonalModel_LastName" name="RealBeneﬁciaryPersonalModel.LastName" value="">
+                            <input type="hidden" id="RealBene_ciaryPersonalModel_Nationalites" name="RealBeneﬁciaryPersonalModel.Nationalites" value="System.Collections.Generic.List`1[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem]">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="RealBene_ciaryPersonalModel_NationalityID" name="RealBeneﬁciaryPersonalModel.NationalityID" value="">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="RealBene_ciaryPersonalModel_NationalNumber" name="RealBeneﬁciaryPersonalModel.NationalNumber" value="">
+                            <input type="hidden" id="RealBene_ciaryPersonalModel_IdentityTypes" name="RealBeneﬁciaryPersonalModel.IdentityTypes" value="System.Collections.Generic.List`1[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem]">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="RealBene_ciaryPersonalModel_IdentityType" name="RealBeneﬁciaryPersonalModel.IdentityType" value="0">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="RealBene_ciaryPersonalModel_ProofOfIdentityNumber" name="RealBeneﬁciaryPersonalModel.ProofOfIdentityNumber" value="">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="RealBene_ciaryPersonalModel_AgeLessThan18" name="RealBeneﬁciaryPersonalModel.AgeLessThan18" value="False">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_RealBene_ciary" name="NotificationAndProfileModel.RealBeneﬁciary" value="">
+                            <input type="hidden" id="NotificationAndProfileModel_PhoneNumber" name="NotificationAndProfileModel.PhoneNumber" value="">
+                            <input type="hidden" id="NotificationAndProfileModel_PurposeForWalletOpening" name="NotificationAndProfileModel.PurposeForWalletOpening" value="System.Collections.Generic.List`1[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem]">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_Purpos" name="NotificationAndProfileModel.Purpos" value="0">
+                            <input type="hidden" id="NotificationAndProfileModel_JobSector" name="NotificationAndProfileModel.JobSector" value="System.Collections.Generic.List`1[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem]">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_Sector" name="NotificationAndProfileModel.Sector" value="0">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_Occupation" name="NotificationAndProfileModel.Occupation" value="System.Collections.Generic.List`1[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem]">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_OccupationId" name="NotificationAndProfileModel.OccupationId" value="0">
+                            <input type="hidden" id="NotificationAndProfileModel_MonthlyIncome" name="NotificationAndProfileModel.MonthlyIncome" value="System.Collections.Generic.List`1[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem]">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_Income" name="NotificationAndProfileModel.Income" value="">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_HaveBankAccount" name="NotificationAndProfileModel.HaveBankAccount" value="">
+                            <input type="hidden" data-val="true" data-val-regex="character only أحرف فقط" data-val-regex-pattern="(^[a-zA-Zء-ي]+[ a-zA-Z-_ء-ي]*$)" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_JobTitile" name="NotificationAndProfileModel.JobTitile" value="">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_SpecialNeeds" name="NotificationAndProfileModel.SpecialNeeds" value="">
+                            <input type="hidden" data-val="true" data-val-required="حقل اجباري  -  Mandatory field" id="NotificationAndProfileModel_PEP" name="NotificationAndProfileModel.PEP" value="">
+                            <input type="hidden" id="NotificationAndProfileModel_PromoCode" name="NotificationAndProfileModel.PromoCode" value="">
+                            <input type="hidden" id="DocumetUpload_PersonalDocumetFace_LocalPath" name="DocumetUpload.PersonalDocumetFace.LocalPath" value="">
+                            <input type="hidden" id="DocumetUpload_PersonalDocumetFace_DownloadURL" name="DocumetUpload.PersonalDocumetFace.DownloadURL" value="">
+                            <input type="hidden" data-val="true" data-val-required="The Uploaded field is required." id="DocumetUpload_PersonalDocumetFace_Uploaded" name="DocumetUpload.PersonalDocumetFace.Uploaded" value="False">
+                            <input type="hidden" id="DocumetUpload_PersonalDocumetFace_Key" name="DocumetUpload.PersonalDocumetFace.Key" value="">
+                            <input type="hidden" id="DocumetUpload_PersonalDocumetBack_LocalPath" name="DocumetUpload.PersonalDocumetBack.LocalPath" value="">
+                            <input type="hidden" id="DocumetUpload_PersonalDocumetBack_DownloadURL" name="DocumetUpload.PersonalDocumetBack.DownloadURL" value="">
+                            <input type="hidden" data-val="true" data-val-required="The Uploaded field is required." id="DocumetUpload_PersonalDocumetBack_Uploaded" name="DocumetUpload.PersonalDocumetBack.Uploaded" value="False">
+                            <input type="hidden" id="DocumetUpload_PersonalDocumetBack_Key" name="DocumetUpload.PersonalDocumetBack.Key" value="">
+                            <input type="hidden" id="DocumetUpload_Bene_ciaryDocument_LocalPath" name="DocumetUpload.BeneﬁciaryDocument.LocalPath" value="">
+                            <input type="hidden" id="DocumetUpload_Bene_ciaryDocument_DownloadURL" name="DocumetUpload.BeneﬁciaryDocument.DownloadURL" value="">
+                            <input type="hidden" data-val="true" data-val-required="The Uploaded field is required." id="DocumetUpload_Bene_ciaryDocument_Uploaded" name="DocumetUpload.BeneﬁciaryDocument.Uploaded" value="False">
+                            <input type="hidden" id="DocumetUpload_Bene_ciaryDocument_Key" name="DocumetUpload.BeneﬁciaryDocument.Key" value="">
+                            <input type="hidden" id="DocumetUpload_RepresentativeDocumentFace_LocalPath" name="DocumetUpload.RepresentativeDocumentFace.LocalPath" value="">
+                            <input type="hidden" id="DocumetUpload_RepresentativeDocumentFace_DownloadURL" name="DocumetUpload.RepresentativeDocumentFace.DownloadURL" value="">
+                            <input type="hidden" data-val="true" data-val-required="The Uploaded field is required." id="DocumetUpload_RepresentativeDocumentFace_Uploaded" name="DocumetUpload.RepresentativeDocumentFace.Uploaded" value="False">
+                            <input type="hidden" id="DocumetUpload_RepresentativeDocumentFace_Key" name="DocumetUpload.RepresentativeDocumentFace.Key" value="">
+                            <input type="hidden" id="DocumetUpload_RepresentativeDocumentBack_LocalPath" name="DocumetUpload.RepresentativeDocumentBack.LocalPath" value="">
+                            <input type="hidden" id="DocumetUpload_RepresentativeDocumentBack_DownloadURL" name="DocumetUpload.RepresentativeDocumentBack.DownloadURL" value="">
+                            <input type="hidden" data-val="true" data-val-required="The Uploaded field is required." id="DocumetUpload_RepresentativeDocumentBack_Uploaded" name="DocumetUpload.RepresentativeDocumentBack.Uploaded" value="False">
+                            <input type="hidden" id="DocumetUpload_RepresentativeDocumentBack_Key" name="DocumetUpload.RepresentativeDocumentBack.Key" value="">
+                            <input type="hidden" id="DocumetUpload_SelfieDocument_LocalPath" name="DocumetUpload.SelfieDocument.LocalPath" value="">
+                            <input type="hidden" id="DocumetUpload_SelfieDocument_DownloadURL" name="DocumetUpload.SelfieDocument.DownloadURL" value="">
+                            <input type="hidden" data-val="true" data-val-required="The Uploaded field is required." id="DocumetUpload_SelfieDocument_Uploaded" name="DocumetUpload.SelfieDocument.Uploaded" value="False">
+                            <input type="hidden" id="DocumetUpload_SelfieDocument_Key" name="DocumetUpload.SelfieDocument.Key" value="">
+                            <input type="hidden" id="OTP" name="OTP" value="">
+                            <input type="hidden" id="Type" name="Type" value="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#valExDate").hide();
+        $("#errNationalNumber").hide();
+        RemovePlaceholder();
+        $('#NationalityDDL').select2({
+            placeholder: "ابحث أو اختر...",
+            allowClear: true, // This allows clearing the selection
+        });
+    });
+    function CheckType() {
+        $("#div_AllType").show();
+        $("#errNationalNumber").hide();
+        $("#valExDate").hide();
+        if ($("#NationalityDDL").val() == "1") {
+            HideOrShowNational(true);
+            ChangeNationalText("رقم الوطني");
+            HideOrShowNumber(true);
+            ChangeNumberText("رقم الهوية");
+            $("#IdNoR").show();
+            $("#IdentityModel_ProofOfIdentityNumber").attr("type", "text");
+            $("#IdentityModel_ProofOfIdentityNumber").attr("placeholder", "ABC12345");
+            HideOrShowFileNumber(false);
+            HideOrShowDate(false);
+        }
+        else if ($("#NationalityDDL").val() == "2") {
+            RemovePlaceholder();
+            HideOrShowNational(false);
+            HideOrShowNumber(true);
+            ChangeNumberText("رقم الجواز");
+            HideOrShowFileNumber(false);
+            HideOrShowDate(true);
+            ChangeDateText("تاريخ الانتهاء");
+        }
+        else if ($("#NationalityDDL").val() == "3") {
+            RemovePlaceholder();
+            HideOrShowNational(false);
+            HideOrShowNumber(true);
+            ChangeNumberText("رقم الملف");
+            $('#IdentityModel_ProofOfIdentityNumber').attr('type', 'number');
+            HideOrShowFileNumber(true);
+            HideOrShowDate(false);
+        }
+        else if ($("#NationalityDDL").val() == "4") {
+            RemovePlaceholder();
+            HideOrShowNational(true);
+            ChangeNationalText("الرقم الوطني للام");
+            HideOrShowNumber(true);
+            ChangeNumberText("رقم متسلسل");
+            HideOrShowFileNumber(false);
+            HideOrShowDate(false);
+        }
+        else if ($("#NationalityDDL").val() == "5") {
+            RemovePlaceholder();
+            HideOrShowNational(false);
+            HideOrShowNumber(true);
+            ChangeNumberText("رقم الجواز");
+            HideOrShowFileNumber(false);
+            HideOrShowDate(true);
+            ChangeDateText("تاريخ الانتهاء");
+        }
+        else if ($("#NationalityDDL").val() == "8" || $("#NationalityDDL").val() == "9" || $("#NationalityDDL").val() == "10") {
+            RemovePlaceholder();
+            HideOrShowNational(false);
+            HideOrShowNumber(true);
+            HideOrShowFileNumber(false);
+            HideOrShowDate(true);
+            if ($("#NationalityDDL").val() == "10") {
+                ChangeNumberText("الرقم");
+                ChangeDateText("تاريخ الميلاد");
+            } else {
+                ChangeNumberText("الرقم الشخصي");
+                ChangeDateText("تاريخ الانتهاء");
+            }
+        }
+        else if ($("#NationalityDDL").val() == "14") {
+            RemovePlaceholder();
+            HideOrShowNational(true);
+            ChangeNationalText("رقم الوطني");
+            HideOrShowNumber(false);
+            HideOrShowFileNumber(false);
+            HideOrShowDate(true);
+            ChangeDateText("تاريخ الميلاد");
+        }
+    }
+    function NextFunction() {
+        var Isvalid = $("#CheckPersonalInfo").validate();
+        var txtExDate = $("#IdentityModel_documentValitidyDate").val();
+        if (Isvalid && $("#NationalityDDL").val() == "") {
+            $("#CheckPersonalInfo").submit();
+        }
+        else if (new Date(txtExDate) <= new Date() && ($("#NationalityDDL").val() != "10" && $("#NationalityDDL").val() != "14")) {
+            $("#valExDate").show();
+        }
+        else if ($("#NationalityDDL").val() == "2" || $("#NationalityDDL").val() == "5") {
+            $("#CheckPersonalInfo").submit();
+        }
+        else if (($("#NationalityDDL").val() == "1" || $("#NationalityDDL").val() == "4" || $("#NationalityDDL").val() == "14") && $("#IdentityModel_NationalNumber").val().length != 10) {
+            $("#errNationalNumber").show();
+            $("#valExDate").hide();
+        }
+        else if (Isvalid) {
+            $("#errNationalNumber").hide();
+            $("#CheckPersonalInfo").submit();
+        }
+    }
+    function RemovePlaceholder() {
+        $("#IdentityModel_ProofOfIdentityNumber").attr("placeholder", "");
+        $('#IdentityModel_ProofOfIdentityNumber').removeAttr('type');
+        $("#IdNoR").hide();
+    }
+    function HideOrShowNational(IsShow) {
+        if (IsShow)
+            $("#div_National").show();
+        else
+            $("#div_National").hide();
+    }
+    function HideOrShowNumber(IsShow) {
+        if (IsShow)
+            $("#divNumber").show();
+        else
+            $("#divNumber").hide();
+    }
+    function HideOrShowFileNumber(IsShow) {
+        if (IsShow)
+            $("#div_FileNumber").show();
+        else
+            $("#div_FileNumber").hide();
+    }
+    function HideOrShowDate(IsShow) {
+        if (IsShow)
+            $("#divDate").show();
+        else
+            $("#divDate").hide();
+    }
+    function ChangeNationalText(Name) {
+        $("#lblNational").text(Name);
+    }
+    function ChangeNumberText(Date) {
+        $("#lblNumber").text(Date);
+    }
+    function ChangeDateText(Date) {
+        $("#lblDate").text(Date);
+    }
+</script>
+<style>
+    #PersonalModel_Gender, #PersonalModel_IsnewAccount {
+        -webkit-appearance: radio;
+    }
+
+    .wizard-footer {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    select {
+        -webkit-appearance: listbox !important;
+    }
+
+    .col-md-4, .col-sm-4, .col-xs-4 {
+        float: right !important;
+    }
+</style>
+   </div>
+
+
+
+    <div id="MessagesDialog">
+    </div>
+    <div id="AjaxLoaderContainer" class="loading" style="display:none"></div>
+
+
+<footer class="main-footer" style="margin-left: 0px;margin-right: 0px;border: none;color: #184459;">
+    <center>
+        <label style="display:inline-block">.Copyright  © 2024 <a href="https://www.facebook.com/DinarakJO/">Dinarak</a>. All rights reserved</label>
+    </center>
+</footer>
+
+<script type="text/javascript">
+
+
+        var __RootName = "/";
+        var __ControllerName = "RegisterCustomer";
+        $(document).ready(function () {
+           $(window).on('unload', function() {
+    $.unblockUI();
+});
+
+            $("form").on('submit', function (e) {
+                var isvalid = $(this).valid();
+                if (isvalid) {
+                     ShowHideAjaxLoader(true);
+
+                }
+                else
+                {
+                    e.preventDefault();
+                }
+            });
+
+
+            if (getMobileOperatingSystem() == "iOS") {
+//          $('#navmenu a, .panel-collapse a, .wizard-container a').on('click', function () {
+//                    ShowHideAjaxLoader(true);
+//});
+              //     $("#navmenu a , .panel-collapse a , .wizard-container a").click(function (e) {
+              //      e.preventDefault();
+              //      var url = this.href;
+              //     ShowHideAjaxLoader(true);
+              //      setTimeout(function() {
+              //    window.location.href = url;
+              // },1);
+              //});
+
+
+                $("#navmenu a , .panel-collapse a , .wizard-container a").click(function () {
+
+                    ShowHideAjaxLoader(true);
+                });
+
+
+            }
+            else {
+                $(window).on('beforeunload', function(){
+             leavingPageLoader();
+             });
+
+             }
+
+        });
+        function leavingPageLoader() {
+
+            ShowHideAjaxLoader(true);
+    }
+
+    function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "unknown";
+}
+</script>
+<script>
+    $(function () {
+        var url = window.location.href;
+
+        $("#navmenu a").each(function () {
+            if (url == (this.href)) {
+                $(this).closest("li").addClass("active");
+            }
+        });
+    });
+
+</script>
+<link href="Content/select2.min.css" rel="stylesheet">
+<!-- Include Select2 JS -->
+<script src="Scripts/select2.min.js"></script>
+</body></html>
